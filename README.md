@@ -1,22 +1,18 @@
-# Stephen Mar — Personal Brand Site
+Stephen Mar — Personal Brand Website
 
-This is the single-page personal brand website for Stephen Mar (@iamstephenmar).
+This is the official personal brand website of Stephen Mar, entrepreneur and investor in crypto and Web3.
 
-## Deployment on GitHub Pages
+Project Structure:
 
-1. Ensure your repository is named `stephen-mar.github.io`.
-2. Place the following files in the repository:
-   - index.html
-   - assets/images/headshot.jpg
-3. Commit and push to the main branch.
-4. Your site will automatically be live at:
+stephenmar.github.io/
+├─ index.html
+├─ README.md
+└─ assets/
+    └─ images/
+        └─ headshot.jpg
 
-https://stephen-mar.github.io/
+This website features a dark, premium theme, is fully responsive, has smooth scroll navigation, includes a hero section with full headshot, About, Conviction, Insights, Focus Areas, and Connect sections, uses Tailwind CSS via CDN (no build step required), and is SEO optimized.
 
-## Features
+To deploy on GitHub Pages: create a repository named `stephenmar.github.io`, upload all files (index.html, README.md, assets folder) to the repository, go to Settings → Pages, under Source select the main branch and /root folder, click Save. Your site will be live at https://stephen-mar.github.io/.
 
-- Dark premium aesthetic with teal and gold accents
-- Hero section with headshot and tagline
-- About, Conviction, Insights, Focus Areas, Connect sections
-- Fade-in sections, hover lifts, parallax headshot
-- Fully responsive and mobile-first
+To update the site: edit index.html for content changes, replace assets/images/headshot.jpg to update the headshot, then commit and push changes to see them live.
