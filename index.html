@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stephen Mar — Crypto Investor</title>
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind Config -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#0A2540',   // Deep navy
-            accent: '#D4AF37',    // Gold accent
-            bgsoft: '#FAF9F6'     // Soft background
+            primary: '#0A2540',
+            accent: '#D4AF37',
+            bgsoft: '#FAF9F6'
           }
         }
       }
@@ -25,223 +23,184 @@
 
   <style>
     html { scroll-behavior: smooth; }
+
+    /* Premium subtle hover */
+    .card-hover:hover {
+      transform: translateY(-4px);
+      transition: all 0.3s ease;
+    }
   </style>
 </head>
 
-<body class="bg-bgsoft text-gray-800 font-sans">
+<body class="bg-bgsoft text-gray-800">
 
-  <!-- HEADER -->
-  <header class="fixed top-0 left-0 w-full bg-bgsoft/90 backdrop-blur z-50 border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+<!-- HEADER -->
+<header class="fixed top-0 w-full bg-bgsoft/90 backdrop-blur border-b z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-      <!-- Logo -->
-      <div class="text-xl font-semibold text-primary tracking-tight">
-        Stephen Mar
+    <div class="text-xl font-semibold text-primary">
+      Stephen Mar
+    </div>
+
+    <nav class="hidden md:flex space-x-8 text-sm">
+      <a href="#about" class="hover:text-primary">About</a>
+      <a href="#expertise" class="hover:text-primary">Expertise</a>
+      <a href="#insights" class="hover:text-primary">Insights</a>
+      <a href="#blog" class="hover:text-primary">Blog</a>
+      <a href="#contact" class="hover:text-primary">Contact</a>
+    </nav>
+
+    <!-- FIXED IMAGE -->
+    <img 
+      src="assets/images/headshot.jpg"
+      class="w-12 h-12 md:w-16 md:h-16 rounded-sm border object-cover object-top"
+      alt="Stephen Mar"
+    />
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="pt-32 pb-20 text-center px-6">
+  <h1 class="text-5xl md:text-6xl font-bold text-primary mb-4">
+    Stephen Mar
+  </h1>
+
+  <p class="text-lg text-gray-600 mb-8">
+    Crypto Investor • DeFi Strategist • Forward-Thinking Perspectives
+  </p>
+
+  <div class="flex justify-center gap-4 flex-wrap">
+    <a href="#insights" class="px-6 py-3 bg-primary text-white rounded-lg">
+      Explore My Insights
+    </a>
+
+    <!-- FIXED X LINK -->
+    <a href="https://twitter.com/iamstephenmar" target="_blank"
+      class="px-6 py-3 border border-accent text-accent rounded-lg hover:bg-accent hover:text-white transition">
+      Connect on X
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
+  <h2 class="text-3xl font-semibold text-primary mb-6">About</h2>
+
+  <p class="text-gray-600 leading-relaxed mb-4">
+    Stephen Mar is a strategic crypto investor focused on identifying asymmetric opportunities across digital assets,
+    decentralized finance, and emerging on-chain ecosystems.
+  </p>
+
+  <p class="text-gray-600 leading-relaxed">
+    His approach blends macro awareness with deep protocol-level insight — navigating volatility with discipline,
+    while positioning ahead of structural shifts shaping the future of finance and technology.
+  </p>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise" class="py-20 bg-white px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold text-primary mb-12">Expertise</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="p-6 bg-bgsoft rounded-xl card-hover">
+        <h3 class="font-semibold text-primary mb-2">Market Cycles</h3>
+        <p class="text-sm text-gray-600">
+          Reading liquidity cycles, sentiment shifts, and macro alignment.
+        </p>
       </div>
 
-      <!-- Nav -->
-      <nav class="hidden md:flex space-x-8 text-sm text-gray-600">
-        <a href="#about" class="hover:text-primary transition">About</a>
-        <a href="#expertise" class="hover:text-primary transition">Expertise</a>
-        <a href="#insights" class="hover:text-primary transition">Insights</a>
-        <a href="#blog" class="hover:text-primary transition">Blog</a>
-        <a href="#contact" class="hover:text-primary transition">Contact</a>
-      </nav>
+      <div class="p-6 bg-bgsoft rounded-xl card-hover">
+        <h3 class="font-semibold text-primary mb-2">DeFi Systems</h3>
+        <p class="text-sm text-gray-600">
+          Understanding primitives, yield design, and protocol evolution.
+        </p>
+      </div>
 
-      <!-- Profile Image -->
-      <div class="ml-4">
-        <!-- Uses your local image -->
-        <img 
-          src="assets/images/headshot.jpg"
-          alt="Stephen Mar"
-          class="w-12 h-12 md:w-16 md:h-16 object-cover rounded-sm border border-gray-300 shadow-sm"
-        />
+      <div class="p-6 bg-bgsoft rounded-xl card-hover">
+        <h3 class="font-semibold text-primary mb-2">Portfolio Strategy</h3>
+        <p class="text-sm text-gray-600">
+          Structuring high-conviction, resilient digital asset exposure.
+        </p>
       </div>
 
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- HERO -->
-  <section class="pt-32 pb-20 px-6 text-center bg-gradient-to-b from-white to-bgsoft">
-    <div class="max-w-4xl mx-auto">
-      
-      <h1 class="text-4xl md:text-6xl font-bold text-primary mb-6">
-        Stephen Mar
-      </h1>
+<!-- BLOG -->
+<section id="blog" class="py-20 px-6 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl text-primary text-center mb-12">
+      Latest Notes & Insights
+    </h2>
 
-      <p class="text-lg md:text-xl text-gray-600 mb-10">
-        Crypto Investor • DeFi Strategist • Forward-Thinking Perspectives
-      </p>
+    <div class="grid md:grid-cols-2 gap-8">
 
-      <div class="flex justify-center gap-4 flex-wrap">
-        <a href="#insights" class="px-6 py-3 bg-primary text-white rounded-lg shadow hover:opacity-90 transition">
-          Explore My Insights
-        </a>
-        <a href="https://twitter.com/" target="_blank" class="px-6 py-3 border border-accent text-accent rounded-lg hover:bg-accent hover:text-white transition">
-          Connect on X
-        </a>
+      <!-- BLOG CARD -->
+      <div class="p-6 bg-bgsoft rounded-xl card-hover">
+        <h3 class="font-semibold text-primary mb-2">
+          Navigating Crypto Market Cycles in 2026
+        </h3>
+
+        <p class="text-sm text-gray-600 mb-3">
+          Markets don’t move randomly — they rotate through phases of expansion,
+          euphoria, contraction, and reset.
+        </p>
+
+        <!-- EXPANDABLE -->
+        <p class="hidden text-sm text-gray-600" id="post1">
+          Understanding where we are in the cycle allows for better positioning.
+          Most participants react late — strategic investors anticipate transitions early.
+        </p>
+
+        <button onclick="togglePost('post1')" class="text-accent text-sm mt-2">
+          Read More →
+        </button>
+      </div>
+
+      <div class="p-6 bg-bgsoft rounded-xl card-hover">
+        <h3 class="font-semibold text-primary mb-2">
+          DeFi’s Next Chapter
+        </h3>
+
+        <p class="text-sm text-gray-600 mb-3">
+          The next wave of DeFi won’t be driven by hype — but by sustainable models.
+        </p>
+
+        <p class="hidden text-sm text-gray-600" id="post2">
+          Expect a shift toward real yield, capital efficiency, and deeper integration
+          with traditional systems.
+        </p>
+
+        <button onclick="togglePost('post2')" class="text-accent text-sm mt-2">
+          Read More →
+        </button>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about" class="py-20 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold text-primary mb-6">About</h2>
-      <p class="text-gray-600 leading-relaxed">
-        Stephen Mar is a forward-thinking crypto investor and strategist focused on identifying
-        asymmetric opportunities across digital assets, DeFi ecosystems, and emerging technologies.
-        His approach blends deep market insight with long-term strategic thinking, navigating
-        volatility with precision while uncovering innovation beyond the noise.
-      </p>
-    </div>
-  </section>
+<!-- FOOTER -->
+<footer id="contact" class="py-12 text-center">
+  <p class="text-gray-500 mb-4">© 2026 Stephen Mar</p>
 
-  <!-- EXPERTISE -->
-  <section id="expertise" class="py-20 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-semibold text-primary text-center mb-12">Expertise</h2>
+  <div class="flex justify-center gap-6">
+    <a href="https://twitter.com/iamstephenmar" target="_blank">X</a>
+    <a href="mailto:youremail@example.com">Email</a>
+  </div>
+</footer>
 
-      <div class="grid md:grid-cols-3 gap-8">
-        
-        <div class="p-6 bg-bgsoft rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-lg font-semibold text-primary mb-2">Crypto Market Strategy</h3>
-          <p class="text-gray-600 text-sm">
-            Navigating cycles, liquidity flows, and macro trends with precision.
-          </p>
-        </div>
-
-        <div class="p-6 bg-bgsoft rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-lg font-semibold text-primary mb-2">DeFi Innovation</h3>
-          <p class="text-gray-600 text-sm">
-            Identifying emerging protocols and next-gen financial primitives.
-          </p>
-        </div>
-
-        <div class="p-6 bg-bgsoft rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-lg font-semibold text-primary mb-2">Portfolio Thinking</h3>
-          <p class="text-gray-600 text-sm">
-            Building resilient, forward-looking digital asset portfolios.
-          </p>
-        </div>
-
-        <div class="p-6 bg-bgsoft rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-lg font-semibold text-primary mb-2">Emerging Opportunities</h3>
-          <p class="text-gray-600 text-sm">
-            Early-stage identification of high-potential crypto narratives.
-          </p>
-        </div>
-
-        <div class="p-6 bg-bgsoft rounded-xl shadow-sm hover:shadow-md transition">
-          <h3 class="text-lg font-semibold text-primary mb-2">Strategic Foresight</h3>
-          <p class="text-gray-600 text-sm">
-            Anticipating long-term shifts across Web3 and digital economies.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- INSIGHTS -->
-  <section id="insights" class="py-20 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold text-primary mb-6">Insights</h2>
-      <p class="text-gray-600">
-        Perspectives on crypto markets, DeFi evolution, and the future of digital assets —
-        grounded in strategy, not speculation.
-      </p>
-    </div>
-  </section>
-
-  <!-- BLOG -->
-  <section id="blog" class="py-20 px-6 bg-white">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-semibold text-primary text-center mb-12">
-        Latest Notes & Insights
-      </h2>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <div class="p-6 bg-bgsoft rounded-xl shadow-sm hover:shadow-md transition">
-          <p class="text-xs text-gray-400 mb-2">March 2026</p>
-          <h3 class="font-semibold text-primary mb-2">
-            Navigating Crypto Market Cycles in 2026
-          </h3>
-          <p class="text-sm text-gray-600 mb-4">
-            Understanding structural shifts and timing market transitions effectively.
-          </p>
-          <a href="#" class="text-accent text-sm">Read More →</a>
-        </div>
-
-        <div class="p-6 bg-bgsoft rounded-xl shadow-sm hover:shadow-md transition">
-          <p class="text-xs text-gray-400 mb-2">February 2026</p>
-          <h3 class="font-semibold text-primary mb-2">
-            DeFi’s Next Chapter: Innovation Beyond Hype
-          </h3>
-          <p class="text-sm text-gray-600 mb-4">
-            Where real value is being built in decentralized finance.
-          </p>
-          <a href="#" class="text-accent text-sm">Read More →</a>
-        </div>
-
-        <div class="p-6 bg-bgsoft rounded-xl shadow-sm hover:shadow-md transition">
-          <p class="text-xs text-gray-400 mb-2">January 2026</p>
-          <h3 class="font-semibold text-primary mb-2">
-            Strategic Thinking in Volatile Digital Assets
-          </h3>
-          <p class="text-sm text-gray-600 mb-4">
-            Balancing conviction with adaptability in uncertain markets.
-          </p>
-          <a href="#" class="text-accent text-sm">Read More →</a>
-        </div>
-
-        <div class="p-6 bg-bgsoft rounded-xl shadow-sm hover:shadow-md transition">
-          <p class="text-xs text-gray-400 mb-2">December 2025</p>
-          <h3 class="font-semibold text-primary mb-2">
-            The Evolution of On-Chain Opportunities
-          </h3>
-          <p class="text-sm text-gray-600 mb-4">
-            Tracking the shift from speculation to utility-driven ecosystems.
-          </p>
-          <a href="#" class="text-accent text-sm">Read More →</a>
-        </div>
-
-        <div class="p-6 bg-bgsoft rounded-xl shadow-sm hover:shadow-md transition">
-          <p class="text-xs text-gray-400 mb-2">November 2025</p>
-          <h3 class="font-semibold text-primary mb-2">
-            Building Resilient Portfolios in Emerging Tech
-          </h3>
-          <p class="text-sm text-gray-600 mb-4">
-            A framework for long-term positioning in rapidly evolving markets.
-          </p>
-          <a href="#" class="text-accent text-sm">Read More →</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer id="contact" class="py-12 px-6 text-center">
-    <p class="text-gray-500 mb-4">
-      © 2026 Stephen Mar. All rights reserved.
-    </p>
-
-    <div class="flex justify-center gap-6 text-sm">
-      <!-- Replace with your real links -->
-      <a href="https://twitter.com/" target="_blank" class="hover:text-primary transition">X</a>
-      <a href="https://linkedin.com/" target="_blank" class="hover:text-primary transition">LinkedIn</a>
-      <a href="mailto:youremail@example.com" class="hover:text-primary transition">Email</a>
-    </div>
-
-    <div class="mt-6">
-      <a href="mailto:youremail@example.com" class="px-6 py-2 border border-accent text-accent rounded-lg hover:bg-accent hover:text-white transition text-sm">
-        Get in Touch
-      </a>
-    </div>
-  </footer>
+<!-- SCRIPT -->
+<script>
+function togglePost(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle("hidden");
+}
+</script>
 
 </body>
 </html>
