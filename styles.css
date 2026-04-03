@@ -1,20 +1,96 @@
-/* Added by Copilot: Ensure hero section image fits the frame nicely */
-.hero-headshot {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
+/* styles.css - Premium personal brand enhancements */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --accent-tan: #d2b48c;
 }
 
-/* If hero has overlayed content, use a relative container and .hero-content for stacking */
-.hero-content {
-  position: relative;
-  z-index: 1;
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.logo-font {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Hero & Background */
+.hero-bg {
+  background: #f8f4eb;
+}
+
+/* Headshot - Fixed full fit, no cropping */
+.headshot-container {
+  width: 380px;
+  height: 380px;
+  border-radius: 9999px;
+  border: 8px solid #ffffff;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+  overflow: hidden;
+  background: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .headshot-container {
+    width: 460px;
+    height: 460px;
+  }
+}
+
+.headshot-img {
   width: 100%;
-  text-align: center;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 18px; /* Breathing room to prevent any edge cutoff */
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headshot-container:hover .headshot-img {
+  transform: scale(1.03);
+}
+
+/* Section styling */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Card enhancements */
+.conviction-card,
+.insight-card,
+.note-card {
+  transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.conviction-card:hover,
+.insight-card:hover,
+.note-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 
+              0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Accent text */
+.accent-tan {
+  color: var(--accent-tan);
+}
+
+/* Button & link polish */
+.cta-button {
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgb(210 180 140 / 0.3);
+}
+
+/* Smooth scroll & focus */
+html {
+  scroll-behavior: smooth;
+}
+
+input:focus {
+  border-color: var(--accent-tan);
+  box-shadow: 0 0 0 3px rgba(210, 180, 140, 0.15);
 }
