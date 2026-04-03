@@ -1,6 +1,238 @@
-<div class="md:col-span-5 flex justify-center">
-  <div class="relative w-80 h-80 md:w-[420px] md:h-[420px]">
-    <!-- Adjusted by Copilot for best image fit -->
-    <img src="assets/images/headshot.jpg" alt="Stephen Mar headshot" class="hero-headshot w-full h-full object-cover rounded-full shadow-2xl shadow-zinc-300/70 border-8 border-white" />
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stephen Mar — Entrepreneur & Investor | Crypto • DeFi • Web3">
+  <title>Stephen Mar — Entrepreneur & Investor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .logo-font { font-family: 'Space Grotesk', sans-serif; }
+    .hero-bg { background: #f8f4eb; }
+    .accent-tan { color: #d2b48c; }
+    .tan-border { border-color: #d2b48c; }
+    
+    /* Image fix: full fit, no cropping, centered head */
+    .headshot-container {
+      width: 380px;
+      height: 380px;
+    }
+    @media (min-width: 768px) {
+      .headshot-container {
+        width: 460px;
+        height: 460px;
+      }
+    }
+    .headshot-img {
+      object-fit: contain;
+      object-position: center;
+      padding: 12px; /* extra breathing room inside circle */
+    }
+  </style>
+</head>
+<body class="bg-[#f8f4eb] text-zinc-800">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-[#f8f4eb]/95 backdrop-blur-md border-b border-zinc-200">
+    <div class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+      <a href="#" class="text-3xl font-semibold logo-font tracking-tighter">Stephen Mar</a>
+      <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+        <a href="#about" class="hover:text-zinc-500 transition-colors">About</a>
+        <a href="#conviction" class="hover:text-zinc-500 transition-colors">Conviction</a>
+        <a href="#insights" class="hover:text-zinc-500 transition-colors">Insights</a>
+        <a href="#notes" class="hover:text-zinc-500 transition-colors">Notes</a>
+        <a href="#focus" class="hover:text-zinc-500 transition-colors">Focus</a>
+        <a href="#connect" class="hover:text-zinc-500 transition-colors">Connect</a>
+      </div>
+      <a href="https://x.com/iamstephenmar" target="_blank" 
+         class="px-8 py-3 bg-zinc-900 text-white rounded-3xl font-medium hover:bg-black transition-all flex items-center gap-2">
+        <i class="fa-brands fa-x-twitter"></i> Follow
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-screen flex items-center pt-12">
+    <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-12 gap-16 items-center">
+      <div class="md:col-span-7 space-y-12">
+        <div class="inline px-6 py-3 border border-zinc-300 rounded-full text-sm tracking-widest text-zinc-500">ENTREPRENEUR & INVESTOR</div>
+        
+        <h1 class="text-7xl md:text-8xl font-semibold logo-font tracking-tighter leading-none">
+          Stephen Mar
+        </h1>
+        
+        <p class="text-4xl md:text-5xl text-zinc-600 font-light max-w-lg">
+          Markets first.<br>Conviction always.
+        </p>
+        
+        <div class="flex flex-wrap gap-x-8 text-2xl accent-tan">
+          <span>Crypto</span>
+          <span class="text-zinc-400">•</span>
+          <span>DeFi</span>
+          <span class="text-zinc-400">•</span>
+          <span>Web3</span>
+        </div>
+        
+        <div class="flex gap-5">
+          <a href="#notes" class="px-10 py-5 bg-zinc-900 text-white rounded-3xl font-semibold text-lg hover:bg-black transition-all">Read Latest Notes</a>
+          <a href="https://x.com/iamstephenmar" target="_blank" class="px-10 py-5 border border-zinc-300 rounded-3xl font-medium text-lg hover:bg-white transition-all">View on X</a>
+        </div>
+      </div>
+      
+      <!-- Circular headshot - FIXED: full fit with object-contain -->
+      <div class="md:col-span-5 flex justify-center">
+        <div class="headshot-container relative rounded-full border-8 border-white shadow-2xl shadow-zinc-300/70 overflow-hidden bg-white">
+          <img src="assets/images/headshot.jpg" 
+               alt="Stephen Mar" 
+               class="headshot-img w-full h-full">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-12 gap-20 items-center">
+      <div class="md:col-span-5">
+        <h2 class="text-6xl font-semibold logo-font tracking-tight">About</h2>
+      </div>
+      <div class="md:col-span-7 prose prose-zinc text-lg leading-relaxed">
+        <p>Stephen Mar is an entrepreneur and investor guided by deep conviction in crypto and Web3. He identifies and backs opportunities where asymmetric upside is engineered through structural advantage rather than speculation.</p>
+        <p>Markets speak first; long-term edge is the only enduring metric. His approach emphasizes resilience, clarity of incentives, and the compounding power of patient, high-conviction capital allocation in a rapidly evolving digital landscape.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conviction -->
+  <section id="conviction" class="py-28 bg-[#f8f4eb]">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="text-6xl font-semibold logo-font tracking-tight text-center mb-20">Conviction Compounds</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-12 rounded-3xl border border-zinc-100 shadow-sm">
+          <p class="italic text-2xl leading-tight">"True edge lies in understanding what the market has priced in — and what it has not yet absorbed."</p>
+          <p class="mt-10 accent-tan text-sm">— Stephen Mar</p>
+        </div>
+        <div class="bg-white p-12 rounded-3xl border border-zinc-100 shadow-sm">
+          <p class="italic text-2xl leading-tight">"Conviction in crypto and Web3 is quiet. It is the discipline of being early with clarity while others chase noise."</p>
+          <p class="mt-10 accent-tan text-sm">— Stephen Mar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section id="insights" class="py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="text-6xl font-semibold logo-font tracking-tight text-center mb-20">Market Thinking</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-[#f8f4eb] p-10 rounded-3xl border border-zinc-100 hover:border-tan-border transition-all">
+          <h3 class="text-2xl font-semibold mb-6 accent-tan">Narrative Velocity</h3>
+          <p class="text-zinc-600">Speed of market absorption separates lasting infrastructure from fleeting narratives. Protocols that convert attention into durable systems will define the decade.</p>
+        </div>
+        <div class="bg-[#f8f4eb] p-10 rounded-3xl border border-zinc-100 hover:border-tan-border transition-all">
+          <h3 class="text-2xl font-semibold mb-6 accent-tan">Structural Resilience</h3>
+          <p class="text-zinc-600">Bear markets reveal what endures. The strongest projects are built on incentive alignment that survives hype cycles and rewards patience.</p>
+        </div>
+        <div class="bg-[#f8f4eb] p-10 rounded-3xl border border-zinc-100 hover:border-tan-border transition-all">
+          <h3 class="text-2xl font-semibold mb-6 accent-tan">Asymmetric Bets</h3>
+          <p class="text-zinc-600">Highest-conviction capital flows to setups where downside is contained and upside remains structurally uncapped — the rare intersection of technology and mispriced belief.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Notes -->
+  <section id="notes" class="py-28 bg-[#f8f4eb]">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex justify-between items-baseline mb-16">
+        <h2 class="text-6xl font-semibold logo-font tracking-tight">Recent Notes</h2>
+        <p class="text-zinc-500">Strategic thinking • Updated April 2026</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-10 rounded-3xl border border-zinc-100 hover:shadow-xl transition-all">
+          <div class="accent-tan text-sm mb-6">MAR 28, 2026</div>
+          <h3 class="font-semibold text-2xl mb-6">Web3 Identity and the Future of Digital Sovereignty</h3>
+          <p class="text-zinc-600">Persistent, user-controlled identity layers will unlock an ownership economy immune to platform gatekeeping. The quiet protocols building this foundation matter most.</p>
+          <div class="mt-12 text-xs text-zinc-400">5 min read</div>
+        </div>
+        <div class="bg-white p-10 rounded-3xl border border-zinc-100 hover:shadow-xl transition-all">
+          <div class="accent-tan text-sm mb-6">MAR 15, 2026</div>
+          <h3 class="font-semibold text-2xl mb-6">DeFi Beyond Yield: Capital Efficiency at Scale</h3>
+          <p class="text-zinc-600">The next chapter moves from speculative farming to protocol-level primitives that power real economic coordination. Those solving coordination costs will command lasting value.</p>
+          <div class="mt-12 text-xs text-zinc-400">7 min read</div>
+        </div>
+        <div class="bg-white p-10 rounded-3xl border border-zinc-100 hover:shadow-xl transition-all">
+          <div class="accent-tan text-sm mb-6">MAR 02, 2026</div>
+          <h3 class="font-semibold text-2xl mb-6">Institutional Adoption and Asymmetric Portfolio Construction</h3>
+          <p class="text-zinc-600">As allocations mature from tactical to strategic, the compounding impact of decentralized networks on long-term wealth will be measured in generational terms.</p>
+          <div class="mt-12 text-xs text-zinc-400">6 min read</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Focus Areas -->
+  <section id="focus" class="py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="text-6xl font-semibold logo-font tracking-tight text-center mb-20">Focus Areas</h2>
+      <div class="grid md:grid-cols-4 gap-10">
+        <div class="text-center group">
+          <div class="mx-auto w-24 h-24 flex items-center justify-center text-5xl mb-8 bg-gradient-to-br from-amber-200 to-yellow-300 rounded-3xl text-white shadow-inner">₿</div>
+          <h3 class="font-semibold text-2xl mb-3">Crypto</h3>
+          <p class="text-zinc-600 text-sm">Native assets and core infrastructure powering the next financial era.</p>
+        </div>
+        <div class="text-center group">
+          <div class="mx-auto w-24 h-24 flex items-center justify-center text-5xl mb-8 bg-gradient-to-br from-purple-200 to-pink-300 rounded-3xl text-white shadow-inner">⟠</div>
+          <h3 class="font-semibold text-2xl mb-3">DeFi</h3>
+          <p class="text-zinc-600 text-sm">Primitives re-architecting capital efficiency and coordination.</p>
+        </div>
+        <div class="text-center group">
+          <div class="mx-auto w-24 h-24 flex items-center justify-center text-5xl mb-8 bg-gradient-to-br from-amber-200 to-orange-300 rounded-3xl text-white shadow-inner">🌐</div>
+          <h3 class="font-semibold text-2xl mb-3">Web3</h3>
+          <p class="text-zinc-600 text-sm">Layers of ownership, identity, and decentralized coordination.</p>
+        </div>
+        <div class="text-center group">
+          <div class="mx-auto w-24 h-24 flex items-center justify-center text-5xl mb-8 bg-gradient-to-br from-emerald-200 to-teal-300 rounded-3xl text-white shadow-inner">↗︎</div>
+          <h3 class="font-semibold text-2xl mb-3">Asymmetric Opportunities</h3>
+          <p class="text-zinc-600 text-sm">High-conviction positions where risk is bounded and upside remains open-ended.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect -->
+  <section id="connect" class="py-28 bg-[#f8f4eb]">
+    <div class="max-w-2xl mx-auto px-8 text-center">
+      <h2 class="text-6xl font-semibold logo-font tracking-tight mb-8">Let's Connect</h2>
+      <p class="text-xl text-zinc-600 mb-12 max-w-md mx-auto">Receive occasional asymmetric market notes and high-signal updates.</p>
+      
+      <form class="max-w-md mx-auto space-y-6">
+        <input type="email" placeholder="your@email.com" 
+               class="w-full px-8 py-7 bg-white border border-zinc-200 rounded-3xl focus:border-tan-border outline-none text-lg">
+        <button type="submit" 
+                class="w-full py-7 bg-zinc-900 text-white rounded-3xl font-semibold text-lg hover:bg-black transition-all">
+          Subscribe
+        </button>
+      </form>
+
+      <div class="mt-20 text-4xl">
+        <a href="https://x.com/iamstephenmar" target="_blank" class="text-zinc-400 hover:text-amber-700 transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      
+      <p class="mt-16 text-sm text-zinc-500">Markets move fast. Conviction moves faster.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-zinc-200 text-center text-xs text-zinc-400 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      © 2026 Stephen Mar. All rights reserved.<br>
+      Built with conviction.
+    </div>
+  </footer>
+
+</body>
+</html>
